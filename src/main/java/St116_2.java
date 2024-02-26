@@ -54,9 +54,7 @@ public class St116_2 implements Methods{
         for (File file : folder.listFiles()) {
             String fileName = file.getName();
             String[] model = fileName.split("_");
-           // System.out.println(model[1]);
             String[] endModel = model[1].split(".xls");
-          //  System.out.println(endModel[0]);
             if (endModel[0].length() < 20) {
                 StringBuilder str = new StringBuilder(finalPath + endModel[0] + "_St116_2.xlsx");
                 String newName = str.toString();
@@ -66,7 +64,6 @@ public class St116_2 implements Methods{
                     File file2 = new File(newName);
                     Files.copy(file.toPath(), file2.toPath());
                     list.add(endModel[0]);
-                    excelToPdf(newName, endModel[0], "_St116_2",0);
                 }
             }
         }

@@ -1,5 +1,3 @@
-import com.aspose.cells.PdfSaveOptions;
-import com.aspose.cells.Workbook;
 
 import java.io.FileInputStream;
 import java.io.PrintWriter;
@@ -32,16 +30,6 @@ public interface Methods
         return true;
     }
 
-    default void excelToPdf (String excelPath, String model, String nameTester, int pageIndex) throws Exception{
-//        String pdfPath = "C:\\Users\\Sebastian\\Desktop\\doTestu\\raporty_PDF\\";
-//        Workbook workbook = new Workbook(excelPath);
-//        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-//        pdfSaveOptions.setPageIndex(pageIndex);
-//        pdfSaveOptions.setPageCount(1);
-//        StringBuilder str = new StringBuilder(pdfPath + model + nameTester + ".pdf");
-//        String pdfPathWithName = str.toString();
-//        workbook.save(pdfPathWithName, pdfSaveOptions);
-    }
 
     void copyFile() throws Exception;
 }

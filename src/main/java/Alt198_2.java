@@ -63,7 +63,6 @@ public class Alt198_2 implements Methods{
                     File file2 = new File(newName);
                     Files.copy(file.toPath(), file2.toPath());
                     list.add(model);
-                    excelToPdf(newName,model,"_Alt198_2",0);
                 }
             }
         }

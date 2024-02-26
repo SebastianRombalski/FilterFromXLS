@@ -67,7 +67,6 @@ public class Bsg198 implements Methods{
                         File file2 = new File(newName);
                         Files.copy(file.toPath(), file2.toPath());
                         list.add(model);
-                        excelToPdf(newName, model, "_Bsg198",0);
                     }
                 }
                 if(fileName.contains(".xlsm")) {
@@ -79,7 +78,6 @@ public class Bsg198 implements Methods{
                         File file2 = new File(newName);
                         Files.copy(file.toPath(), file2.toPath());
                         list.add(model);
-                        excelToPdf(newName, model, "_Bsg198",0);
                     }
                 }
 
